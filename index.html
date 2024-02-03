@@ -1,0 +1,63 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+            <h2>Devlopeur</h2>
+            <h2 class="header__logo--x">X.</h2>
+        </div>
+        <nav class="header__navbar">
+            <ul>
+                <li><a href="#">acceuil</a></li>
+                <li><a href="#">a propos</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <div class="header__contact">
+                <button>contactez moi</button>
+            </div>
+            <div class="header__mode" id="btn">
+            <i class='bx bx-brightness-half'></i>
+            </div>
+        </nav>
+        
+        
+    </header>
+    <section class="home">
+        <div class="home__info">
+            <h2>Salut, je suis </h2>
+            <h1>BOUTOUB ZAKARYA</h1>
+            <p> développeur web chez LS2I, Je maîtrise HTML, CSS et javascript ainsi que Photoshop et première pro. 
+                Ma fierté réside dans la création d'un site web réussit pour le commerce de ma famille.
+            </p>
+            <div class="home__info--logos">
+                <a href=""><i class='bx bxl-gmail' ></i></a>
+                <a href=""><i class='bx bxl-linkedin' ></i></a>
+                <a href=""><i class='bx bxl-github' ></i></a>
+            </div>
+            <div class="home__info--btn">
+                <button>Telecharger mon CV</button>
+            </div>
+        </div>
+        <div class="home__profil">
+            <img src="asset/image/profil.png" alt="zakarya-boutoub">
+        </div>
+    </section>
+    <script>
+        let btn = document.getElementById('btn');
+        btn.onclick = function(){
+            document.body.classList.toggle('dark-mode')
+        }
+    </script>
+</body>
+</html>
